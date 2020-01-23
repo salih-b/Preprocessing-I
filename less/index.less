@@ -50,10 +50,86 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
-}
+	box-sizing: border-box;	
 
+}
+.center(){
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
 html, body {
     height: 100%;
 }
+nav.navigation{
+	display:flex;
+	justify-content: space-evenly;
+	border-bottom: 1px black solid;
+    padding: 2%;
+	font-size: 1.3rem;
+	background-color: purple;
+	a{
+		text-decoration: none;
+		color: powderblue;
+	}
+}
+.main{
+	display:flex;
+	justify-content: space-between;
+	width:100%;
+	height: -webkit-fill-available;
 
+	/*Child1 of 2 starts here*/
+	.left-side{
+		width:40%;
+		background-color: purple;
+		div{
+			.center();
+			flex-direction: column;
+		}
+		h1{
+			font-size: 2rem;
+		}
+		.resumeprofile{
+			.center();
+			flex-direction: column;
+			padding: 2% 4%;
+			p{
+				font-family: monospace;
+			}
+		}
+		h2{
+			font-size: 1.3rem;
+
+		}
+		.resumecontact{
+			width:60%;
+			div{
+				display: flex;
+    flex-direction: row;
+    margin: 2% 3%;
+    width: 100%;
+    justify-content: start;
+				p{
+					width:45%;
+				}
+			}
+		}
+		#resumeaddress{
+			align-items: baseline;
+		}
+	}
+	/*child2 starts here*/
+	.right-side{
+		width:60%;
+		background-color:powderblue ;
+		section h2{
+			font-size:1.3rem;
+			border-bottom: black 1px solid;
+		}
+		.skills div{
+			display:flex;
+		}
+	}
+
+} /*Parent ends here*/
