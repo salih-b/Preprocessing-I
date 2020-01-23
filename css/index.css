@@ -140,7 +140,6 @@ nav.navigation {
   border-bottom: 1px black solid;
   padding: 2%;
   font-size: 1.3rem;
-  background-color: purple;
 }
 nav.navigation a {
   text-decoration: none;
@@ -156,7 +155,14 @@ nav.navigation a {
 }
 .main .left-side {
   width: 40%;
-  background-color: purple;
+  background-color: #23282c;
+  color: white;
+}
+.main .left-side .myphoto {
+  height: 190px;
+  width: 43%;
+  margin: 6%;
+  border: 1px white double;
 }
 .main .left-side div {
   display: flex;
@@ -198,7 +204,11 @@ nav.navigation a {
 }
 .main .right-side {
   width: 60%;
-  background-color: powderblue ;
+  background-color: white ;
+  color: black;
+}
+.main .right-side .right-margin {
+  margin: 4% 2%;
 }
 .main .right-side section h2 {
   font-size: 1.3rem;
