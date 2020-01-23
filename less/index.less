@@ -58,6 +58,12 @@ table {
 	justify-content: center;
 	align-items: center;
 }
+.boxstyle(){
+	border-left:2px double black;
+			margin:2%;
+			padding:1%;
+			padding-left: 2%;
+}
 html, body {
     height: 100%;
 }
@@ -76,12 +82,11 @@ nav.navigation{
 	display:flex;
 	justify-content: space-between;
 	width:100%;
-	height: -webkit-fill-available;
 
 	/*Child1 of 2 starts here*/
 	.left-side{
 		width:40%;
-		background-color: rgb(35, 40, 44);
+		background-color:lighten(black, 10%);
 		color:white;
 		.myphoto{
 			height: 190px;
@@ -128,17 +133,62 @@ nav.navigation{
 	/*child2 starts here*/
 	.right-side{
 		width:60%;
-		background-color: white ;
+		background-color: beige;
 		color:black;
 		.right-margin{
-			margin:4% 2%;
+			margin: 4% 10% 1%;
+			h3{
+				font-size:1.1rem;
+			}
 		}
 		section h2{
 			font-size:1.3rem;
-			border-bottom: black 1px solid;
+			border-bottom: black 2px solid;
+		}
+		.experience div{
+			
+			.boxstyle();
+		}
+		.education div{
+			
+			.boxstyle();
 		}
 		.skills div{
 			display:flex;
+			justify-content: space-around;
+			margin: 2%;
+			ul.mainskills{
+				font-size:1.1rem;
+			}
+		}
+		.languages{
+
+			ul{
+				.center();
+			justify-content: space-around; 
+			div{
+				.center();
+				border: 2px solid black;
+				border-radius: 50%;
+				padding: 3%;
+				height: 80px;
+				margin: 2%;
+			}
+		}
+		}
+		.hobbies{
+			.stylehobby{
+				.center();
+				justify-content: space-evenly;
+				div{
+					.center();
+				    border: 2px solid black;
+    border-radius: 50%;
+    width: 20%;
+    height: 91px;
+    margin: 2%;
+				}
+			}
 		}
 	}
 
