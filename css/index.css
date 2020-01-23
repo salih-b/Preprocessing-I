@@ -263,7 +263,7 @@ nav.navigation a {
   justify-content: center;
   align-items: center;
   border: 2px solid black;
-  border-radius: 50%;
+  border-radius: 25%;
   width: 20%;
   height: 91px;
   margin: 2%;
