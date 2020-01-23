@@ -156,6 +156,9 @@ nav.navigation a {
   width: 40%;
   background-color: #1a1a1a;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .main .left-side .myphoto {
   height: 190px;
@@ -184,6 +187,9 @@ nav.navigation a {
 .main .left-side h2 {
   font-size: 1.3rem;
 }
+.main .left-side .resumeinfo {
+  bottom: 2%;
+}
 .main .left-side .resumecontact {
   width: 60%;
 }
@@ -196,6 +202,10 @@ nav.navigation a {
 }
 .main .left-side .resumecontact div p {
   width: 45%;
+}
+.main .left-side .resumecontact a {
+  text-decoration: none;
+  color: grey;
 }
 .main .left-side #resumeaddress {
   align-items: baseline;
@@ -250,6 +260,7 @@ nav.navigation a {
   padding: 3%;
   height: 80px;
   margin: 2%;
+  width: 10%;
 }
 .main .right-side .hobbies .stylehobby {
   display: flex;
