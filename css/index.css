@@ -1,1 +1,270 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+nav.navigation {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px black solid;
+  padding: 2%;
+  font-size: 1.3rem;
+}
+nav.navigation a {
+  text-decoration: none;
+  color: powderblue;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /*Child1 of 2 starts here*/
+  /*child2 starts here*/
+}
+.main .left-side {
+  width: 40%;
+  background-color: #1a1a1a;
+  color: white;
+}
+.main .left-side .myphoto {
+  height: 190px;
+  width: 43%;
+  margin: 6%;
+}
+.main .left-side div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main .left-side h1 {
+  font-size: 2rem;
+}
+.main .left-side .resumeprofile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2% 4%;
+}
+.main .left-side .resumeprofile p {
+  font-family: monospace;
+}
+.main .left-side h2 {
+  font-size: 1.3rem;
+}
+.main .left-side .resumecontact {
+  width: 60%;
+}
+.main .left-side .resumecontact div {
+  display: flex;
+  flex-direction: row;
+  margin: 2% 3%;
+  width: 100%;
+  justify-content: start;
+}
+.main .left-side .resumecontact div p {
+  width: 45%;
+}
+.main .left-side #resumeaddress {
+  align-items: baseline;
+}
+.main .right-side {
+  width: 60%;
+  background-color: beige;
+  color: black;
+}
+.main .right-side .right-margin {
+  margin: 4% 10% 1%;
+}
+.main .right-side .right-margin h3 {
+  font-size: 1.1rem;
+}
+.main .right-side section h2 {
+  font-size: 1.3rem;
+  border-bottom: black 2px solid;
+}
+.main .right-side .experience div {
+  border-left: 2px double black;
+  margin: 2%;
+  padding: 1%;
+  padding-left: 2%;
+}
+.main .right-side .education div {
+  border-left: 2px double black;
+  margin: 2%;
+  padding: 1%;
+  padding-left: 2%;
+}
+.main .right-side .skills div {
+  display: flex;
+  justify-content: space-around;
+  margin: 2%;
+}
+.main .right-side .skills div ul.mainskills {
+  font-size: 1.1rem;
+}
+.main .right-side .languages ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.main .right-side .languages ul div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 3%;
+  height: 80px;
+  margin: 2%;
+}
+.main .right-side .hobbies .stylehobby {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.main .right-side .hobbies .stylehobby div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 25%;
+  width: 20%;
+  height: 91px;
+  margin: 2%;
+}
+/*Parent ends here*/
