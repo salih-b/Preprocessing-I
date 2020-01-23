@@ -145,12 +145,24 @@ nav.navigation a {
   text-decoration: none;
   color: powderblue;
 }
+@media (max-width: 500px) {
+  .cancels {
+    width: unset;
+    border: none;
+    border-radius: unset;
+  }
+}
 .main {
   display: flex;
   justify-content: space-between;
   width: 100%;
   /*Child1 of 2 starts here*/
   /*child2 starts here*/
+}
+@media (max-width: 500px) {
+  .main {
+    display: unset;
+  }
 }
 .main .left-side {
   width: 40%;
@@ -159,6 +171,13 @@ nav.navigation a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .main .left-side {
+    width: unset;
+    border: none;
+    border-radius: unset;
+  }
 }
 .main .left-side .myphoto {
   height: 190px;
@@ -215,8 +234,20 @@ nav.navigation a {
   background-color: beige;
   color: black;
 }
+@media (max-width: 500px) {
+  .main .right-side {
+    width: unset;
+    border: none;
+    border-radius: unset;
+  }
+}
 .main .right-side .right-margin {
   margin: 4% 10% 1%;
+}
+@media (max-width: 500px) {
+  .main .right-side .right-margin {
+    margin-top: 0%;
+  }
 }
 .main .right-side .right-margin h3 {
   font-size: 1.1rem;
@@ -262,6 +293,11 @@ nav.navigation a {
   margin: 2%;
   width: 10%;
 }
+@media (max-width: 500px) {
+  .main .right-side .languages ul div {
+    border: unset;
+  }
+}
 .main .right-side .hobbies .stylehobby {
   display: flex;
   justify-content: center;
@@ -277,5 +313,12 @@ nav.navigation a {
   width: 20%;
   height: 91px;
   margin: 2%;
+}
+@media (max-width: 500px) {
+  .main .right-side .hobbies .stylehobby div {
+    width: unset;
+    border: none;
+    border-radius: unset;
+  }
 }
 /*Parent ends here*/

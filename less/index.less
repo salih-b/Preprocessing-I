@@ -78,10 +78,21 @@ nav.navigation{
 		color: powderblue;
 	}
 }
+.cancels{
+	@media(max-width: 500px){
+	width:unset;
+	border: none;
+	border-radius: unset;
+	}
+}
 .main{
 	display:flex;
 	justify-content: space-between;
 	width:100%;
+
+	@media (max-width: 500px){
+		display: unset;
+	}
 
 	/*Child1 of 2 starts here*/
 	.left-side{
@@ -90,7 +101,9 @@ nav.navigation{
 		color:white;
 		display: flex;
     flex-direction: column;
-    justify-content: space-between;
+	justify-content: space-between;
+		.cancels();
+
 		.myphoto{
 			height: 190px;
 			width: 43%;
@@ -145,8 +158,12 @@ nav.navigation{
 		width:60%;
 		background-color: beige;
 		color:black;
+		.cancels();
 		.right-margin{
 			margin: 4% 10% 1%;
+			@media(max-width:500px){
+				margin-top:0%;
+			}
 			h3{
 				font-size:1.1rem;
 			}
@@ -184,6 +201,9 @@ nav.navigation{
 				height: 80px;
 				margin: 2%;
 				width: 10%;
+				@media(max-width:500px){
+					border: unset;
+				}
 			}
 		}
 		}
@@ -197,7 +217,8 @@ nav.navigation{
     border-radius: 25%;
     width: 20%;
     height: 91px;
-    margin: 2%;
+	margin: 2%;
+	.cancels();
 				}
 			}
 		}
